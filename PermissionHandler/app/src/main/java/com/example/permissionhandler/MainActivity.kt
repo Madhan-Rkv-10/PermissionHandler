@@ -118,5 +118,15 @@ class MainActivity : AppCompatActivity() {
         //Start the dialog and display it on screen.
         customDialog.show()
     }
+    private fun customProgressDialogFunction() {
+        val customProgressDialog = Dialog(this)
+
+        /*Set the screen content from a layout resource.
+        The resource will be inflated, adding all top-level views to the screen.*/
+        customProgressDialog.setContentView(R.layout.dialog_custom_progress)
+
+        //Start the dialog and display it on screen.
+        customProgressDialog.show()
+    }
 
 }
